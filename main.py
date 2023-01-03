@@ -39,8 +39,8 @@ for currentfile in filenames:  #FOR EACH FILE
   for i in range(y):                                 
     TempList = URLs[i].split(',')                    # new list made from element with ',' as delimeter
     httpsList = [x for x in TempList if 'https' in x]  # extracts only links (elements containing 'https')
-    print(httpsList)
-    print(len(httpsList))
+    #print(httpsList)
+    #print(len(httpsList))
 
     if len(httpsList) == 0:
       Github = ''
@@ -57,9 +57,9 @@ for currentfile in filenames:  #FOR EACH FILE
             Other = httpsList
     
     GithubList[i] = Github              # contains all github links per project
-    print('this is the github:', GithubList[i])
+    #print('this is the github:', GithubList[i])
     OtherList[i] = ', '.join(Other)     # contains additional links as one string per project
-    print('this is the other link:', OtherList[i])
+    #print('this is the other link:', OtherList[i])
     
     #i = i+1      # to iterate through each project ##IS THIS NECESSARY?
   
